@@ -1,16 +1,47 @@
+using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraSwapping : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject northCamera, westCamera, southCamera, eastCamera;
+    public void Update()
     {
-        
+        triggerSwap();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void triggerSwap()
     {
-        
+        if (Keyboard.current.upArrowKey.wasPressedThisFrame)
+        {
+            if (northCamera != null)
+            {
+                northCamera.SetActive(true);
+                this.gameObject.SetActive(false);
+            }
+        }
+        if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
+        {
+            if (eastCamera != null)
+            {
+                eastCamera.SetActive(true);
+                this.gameObject.SetActive(false);
+            }
+        }
+        if (Keyboard.current.downArrowKey.wasPressedThisFrame)
+        {
+            if (southCamera != null)
+            {
+                southCamera.SetActive(true);
+                this.gameObject.SetActive(false);
+            }
+        }
+        if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
+        {
+            if (westCamera != null)
+            {
+                westCamera.SetActive(true);
+                this.gameObject.SetActive(false);
+            }
+        }
     }
 }
