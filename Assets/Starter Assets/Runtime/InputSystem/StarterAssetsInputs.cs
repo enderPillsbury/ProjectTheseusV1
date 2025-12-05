@@ -17,8 +17,8 @@ namespace StarterAssets
 		public bool analogMovement;
 
 		[Header("Mouse Cursor Settings")]
-		public bool cursorLocked = true;
-		public bool cursorInputForLook = true;
+		public bool cursorLocked = false;
+		public bool cursorInputForLook = false;
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
@@ -66,15 +66,9 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 		
-		private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
+	
 
-		private void SetCursorState(bool newState)
-		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-		}
+		
 	}
 	
 }
