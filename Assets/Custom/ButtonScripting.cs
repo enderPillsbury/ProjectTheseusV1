@@ -6,6 +6,10 @@ public class ButtonScripting : MonoBehaviour
 {
     public GameObject interactUI, puzzleInteractible;
     private bool buttonActive = true;
+    void Start()
+    {
+        puzzleInteractible.SetActive(true);
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
