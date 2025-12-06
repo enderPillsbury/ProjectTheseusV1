@@ -14,4 +14,8 @@ public class LevelLoading : MonoBehaviour
     {
         SceneManager.LoadScene("mainMenu");
     }
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
