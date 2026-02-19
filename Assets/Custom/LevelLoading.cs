@@ -14,6 +14,22 @@ public class LevelLoading : MonoBehaviour
     {
         SceneManager.LoadScene("mainMenu");
     }
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene("Level1Basic");
+    }
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("BasicLevel2");
+    }
+    public void LoadLevel3()
+    {
+        SceneManager.LoadScene("BasicLevel3");
+    }
+    public void LoadLevel4()
+    {
+        SceneManager.LoadScene("BasicLevel4");
+    }
     public void quitGame()
     {
         Application.Quit();
