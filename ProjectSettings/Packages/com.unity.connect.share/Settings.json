@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/TheseusDemoV1;C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/New folder;C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/TheseusB1;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/TheseusDemoV3;C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/TheseusDemoV2;C:/Users/Ender Pillsbury/Unity2ProjectD/ProjectTheseusV1/WebGL Builds/TheseusB1;;;;;;;\"}"
             }
         ]
     }

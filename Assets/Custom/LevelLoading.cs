@@ -28,7 +28,7 @@ public class LevelLoading : MonoBehaviour
     }
     public void LoadLevel4()
     {
-        SceneManager.LoadScene("BasicLevel4");
+        SceneManager.LoadScene("BasicLevel4Fixed");
     }
     public void quitGame()
     {

@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 1172919285993045442}
   - component: {fileID: 7536732486898069087}
   - component: {fileID: 5765912242041879181}
+  - component: {fileID: 7380768887734345997}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -422,6 +423,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4329e33c8f58bf498f91b7838d52e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoading
+--- !u!114 &7380768887734345997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241750805150512447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254ecbef1288d3d4ebc60d516c94be72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerData
+  hasIDCard: 0
 --- !u!1 &389729463463780118
 GameObject:
   m_ObjectHideFlags: 0

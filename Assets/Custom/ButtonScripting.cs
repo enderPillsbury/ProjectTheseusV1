@@ -1,15 +1,14 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class ButtonScripting : MonoBehaviour
 {
-    public GameObject interactUI, puzzleInteractible;
+    public GameObject interactUI, puzzleInteractible, puzzleInteractible2, temporaryInteractible;
+    public int TimerAmount;
     private bool buttonActive = true;
-    void Start()
-    {
-        puzzleInteractible.SetActive(true);
-    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -24,19 +23,46 @@ public class ButtonScripting : MonoBehaviour
         {
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
+                if(temporaryInteractible!= null)
+                {
+                    StartCoroutine("TimedButton");
+                }
+
                 if (buttonActive == true)
                 {
                     buttonActive = false;
-                    puzzleInteractible.SetActive(false);
+                    if(puzzleInteractible!= null)
+                    {
+                        puzzleInteractible.SetActive(false);
+                    }
+                    if(puzzleInteractible2 != null)
+                    {
+                        puzzleInteractible2.SetActive(true);
+                    }
                 }
                 else
                 {
                     buttonActive = true;
-                    puzzleInteractible.SetActive(true);
+                    if (puzzleInteractible != null)
+                    {
+                        puzzleInteractible.SetActive(true);
+                    }
+                    if(puzzleInteractible2 != null)
+                    {
+                        puzzleInteractible2.SetActive(false);
+                    }
                 }
             }
         }
         
+    }
+    private IEnumerator TimedButton()
+    {
+        Debug.LogError("StartingTimer");
+        temporaryInteractible.SetActive(false);
+        yield return new WaitForSeconds(TimerAmount);
+        temporaryInteractible.SetActive(true);
+        Debug.LogError("TimerOver");
     }
     void OnTriggerExit(Collider other)
     {
