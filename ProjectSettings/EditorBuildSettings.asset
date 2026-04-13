@@ -23,10 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BasicLevel3.unity
     guid: d7267f70e6ffec74dba4a8395fec5e1c
-  - enabled: 1
+  - enabled: 0
     path: Assets/BasicLevel4.unity
     guid: e5d4b40217faa694da69bdc661d3c269
-  - enabled: 1
+  - enabled: 0
     path: Assets/BasicLevel3Alt.unity
     guid: 0d5c94092885125488839e8951c42186
   - enabled: 1

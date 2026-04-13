@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonScripting : MonoBehaviour
 {
-    public GameObject interactUI, puzzleInteractible, puzzleInteractible2, temporaryInteractible;
+    public GameObject interactUI, puzzleInteractible, puzzleInteractible2, temporaryInteractible, mouseOver;
     public int TimerAmount;
     private bool buttonActive = true;
 
@@ -34,6 +34,10 @@ public class ButtonScripting : MonoBehaviour
                     if(puzzleInteractible!= null)
                     {
                         puzzleInteractible.SetActive(false);
+                        if(mouseOver!= null)
+                        {
+                            mouseOver.SetActive(false);
+                        }
                     }
                     if(puzzleInteractible2 != null)
                     {
