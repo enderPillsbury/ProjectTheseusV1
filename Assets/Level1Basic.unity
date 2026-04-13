@@ -7028,8 +7028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1b2549426338a4b84c5c2932d459f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraRotation
-  farLeft: 575
-  farRight: 575
+  farLeft: 500
+  farRight: 500
   rotationSpeed: 5
   turningLeft: 0
   turningRight: 1
